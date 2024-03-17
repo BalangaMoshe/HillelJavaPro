@@ -1,9 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello Sahsa");
-        System.out.println("How are you?");
+        Employee employee = new Employee("Niko", "Programmer", "niko.nikel@gmail.com", "+380932568745", 30);
+        System.out.println("Employee: " + employee.getFullName() + ", " + employee.getPosition() + ", " + employee.getEmail()
+                + ", " +  employee.getPhone());
 
+        Car car = new Car();
+        car.start();
     }
 }
